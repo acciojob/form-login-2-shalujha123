@@ -4,9 +4,9 @@ document.querySelector("form").addEventListener("submit",handleSubmit)
 
 function handleSubmit(e) {
 	e.preventDefault()
-	let firstName = document.getElementById("firstName").value
-	let lastName = document.getElementById("lastName").value
-	let phoneNumber = document.getElementById("phoneNumber").value
-	let email = document.getElementById("emailId").value
+	let firstName = document.getElementsByName("First Name")[0].value
+	let lastName = document.getElementsByName("Last Name")[0].value
+	let phoneNumber = document.getElementsByName("Phone Number")[0].value
+	let email = document.getElementsByName("Email ID")[0].value
 	alert(`First Name: ${firstName} Last Name: ${lastName} Phone Number: ${phoneNumber} Email ID: ${email}`)
 }
